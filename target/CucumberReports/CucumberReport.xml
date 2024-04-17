@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="55.856" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Search functionality" name="User searches for a valid product" time="16.966">
+<system-out><![CDATA[
+Given User opens the Application............................................passed
+When User enters valid product "HP" into Search box field...................passed
+And User clicks on search button............................................passed
+Then User should get valid product displayed in search results..............passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with valid credentials - Example #1.1" time="9.671">
+<system-out><![CDATA[
+Given User navigate to login page...........................................passed
+When User enters valid email address LastLast12@gmail.com into email field..passed
+And User enters valid password Test@123 into password field.................passed
+And User clicks on login button.............................................passed
+Then Login successful page should be visible................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with valid credentials - Example #1.2" time="10.441">
+<system-out><![CDATA[
+Given User navigate to login page...........................................passed
+When User enters valid email address registeracc@gmail.com into email field.passed
+And User enters valid password Register@123 into password field.............passed
+And User clicks on login button.............................................passed
+Then Login successful page should be visible................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with valid credentials - Example #1.3" time="9.625">
+<system-out><![CDATA[
+Given User navigate to login page...........................................passed
+When User enters valid email address Loginreg@gmail.com into email field....passed
+And User enters valid password Login@123 into password field................passed
+And User clicks on login button.............................................passed
+Then Login successful page should be visible................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with Invalid credentials" time="8.725">
+<system-out><![CDATA[
+Given User navigate to login page...........................................passed
+When User enters Invalid email and Invalid password "123456"................passed
+And User clicks on login button.............................................passed
+Then User should get proper warning message about credentials mismatch......passed
+]]></system-out>
+</testcase>
+</testsuite>
